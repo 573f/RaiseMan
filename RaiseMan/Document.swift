@@ -9,6 +9,8 @@
 import Cocoa
 
 class Document: NSDocument {
+    
+    var employees: [Employee] = []
 
     override init() {
         super.init()
