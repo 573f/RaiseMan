@@ -7,6 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="Document" customModule="RaiseMan" customModuleProvider="target">
             <connections>
+                <outlet property="arrayController" destination="8H2-Zc-iPP" id="xtT-lU-rf5"/>
+                <outlet property="tableView" destination="f6y-Qi-kUA" id="tM8-dF-Q1Q"/>
                 <outlet property="window" destination="xOd-HO-29H" id="JIz-fz-R2o"/>
             </connections>
         </customObject>
@@ -155,7 +157,7 @@
                             <font key="font" metaFont="system" size="21"/>
                         </buttonCell>
                         <connections>
-                            <action selector="add:" target="8H2-Zc-iPP" id="aSM-61-P42"/>
+                            <action selector="addEmployee:" target="-2" id="wvQ-mC-dCG"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OuM-Yq-SC1">
