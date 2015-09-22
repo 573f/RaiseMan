@@ -141,6 +141,27 @@ class Document: NSDocument, NSWindowDelegate {
                      select: true)
     }
     
+    @IBAction func removeEmployees(sender: NSButton) {
+        let selectedPeople: [Employee] = arrayController.selectedObjects as! [Employee]
+        let alert = NSAlert()
+        alert.messageText = "Do you really want to remove these people?"
+        alert.informativeText = "\(selectedPeople.count) people will be removed."
+        alert.addButtonWithTitle("Remove")
+        alert.addButtonWithTitle("Cancel")
+        let window = sender.window!
+        alert.beginSheetModalForWindow(window, completionHandler: {
+            (response) -> Void in
+            // If the user chose "Remove", tell the arrayController to delete the people
+            switch response {
+            case NSAlertFirstButtonReturn:
+                // The arrayController will delete the selected objects
+                // The argument to remove() is ignored
+                self.arrayController.remove(nil)
+            default: break
+            }
+        })
+    }
+    
     // MARK: - Key Value Observing
     
     func startObservingEmployee(employee: Employee) {
