@@ -144,10 +144,20 @@ class Document: NSDocument, NSWindowDelegate {
     @IBAction func removeEmployees(sender: NSButton) {
         let selectedPeople: [Employee] = arrayController.selectedObjects as! [Employee]
         let alert = NSAlert()
-        alert.messageText = "Do you really want to remove these people?"
-        alert.informativeText = "\(selectedPeople.count) people will be removed."
-        alert.addButtonWithTitle("Remove")
-        alert.addButtonWithTitle("Cancel")
+        
+        alert.messageText = NSLocalizedString("REMOVE_MESSAGE", comment: "The remove alert's messageText")
+            //"Do you really want to remove these people?"
+        
+        let informativeText = NSLocalizedString("REMOVE_INFORMATIVE %d", comment: "The remove alert's informativeText")
+        alert.informativeText = String(format: informativeText, selectedPeople.count)
+            //"\(selectedPeople.count) people will be removed."
+        
+        let removeButtonTitle = NSLocalizedString("REMOVE_DO", comment: "The remove alert's remove button")
+        alert.addButtonWithTitle(removeButtonTitle)
+        
+        let removeCancelTitle = NSLocalizedString("REMOVE_CANCEL", comment: "The remove alert's cancel button")
+        alert.addButtonWithTitle(removeCancelTitle)
+        
         let window = sender.window!
         alert.beginSheetModalForWindow(window, completionHandler: {
             (response) -> Void in

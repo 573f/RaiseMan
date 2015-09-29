@@ -1,0 +1,27 @@
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "1Zo-xs-fju"; */
+"1Zo-xs-fju.title" = "Text Cell";
+
+/* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "4nY-jr-PCD"; */
+"4nY-jr-PCD.title" = "Text Cell";
+
+/* Class = "NSButtonCell"; title = "-"; ObjectID = "Ang-Uw-aWD"; */
+"Ang-Uw-aWD.title" = "-";
+
+/* Class = "NSTableColumn"; headerCell.title = "Name"; ObjectID = "Fec-iC-rfM"; */
+"Fec-iC-rfM.headerCell.title" = "Nom";
+
+/* Class = "NSTableColumn"; headerCell.title = "Raise"; ObjectID = "Vv3-8G-7Ww"; */
+"Vv3-8G-7Ww.headerCell.title" = "Augmentation";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "Yem-gf-p1W"; */
+"Yem-gf-p1W.title" = "Table View Cell";
+
+/* Class = "NSButtonCell"; title = "+"; ObjectID = "mqG-hz-99O"; */
+"mqG-hz-99O.title" = "+";
+
+/* Class = "NSTextFieldCell"; title = "Table View Cell"; ObjectID = "s6n-sQ-Xby"; */
+"s6n-sQ-Xby.title" = "Table View Cell";
+
+/* Class = "NSWindow"; title = "RaiseMan"; ObjectID = "xOd-HO-29H"; */
+"xOd-HO-29H.title" = "RaiseMan";
